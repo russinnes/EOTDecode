@@ -31,6 +31,7 @@ All dependencies will be installed using the ./install.sh script, but include:
 * minimodem (with stdin support) [on my github found here](https://github.com/russinnes/minimodem-stdio)
 
 ### Installing
+The included install script will bring in everything you need, no need to source other dependencies.
 ```
 cd ~/
 git clone https://github.com/russinnes/EOTDecode.git
