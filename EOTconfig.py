@@ -6,7 +6,7 @@ Config parameters for EOTdecode.py
 USE_RTL = True
 
 # RTL Device Number, usually 0 if only a single device is plugged in.
-DEVICE = 1
+DEVICE = 0
 
 # RTL PPM Value (Can be found utin rtl_test -p , wait a few minutes to get a stable value)
 PPM = 8
