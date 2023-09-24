@@ -1,0 +1,15 @@
+'''
+Config parameters for EOTdecode.py
+'''
+
+# Set to True if using an RTL SDR dongle for RF input, False if using soundcard input
+USE_RTL = True
+
+# RTL Device Number, usually 0 if only a single device is plugged in.
+DEVICE = 1
+
+# RTL PPM Value (Can be found utin rtl_test -p , wait a few minutes to get a stable value)
+PPM = 8
+
+# Desired gain, leave as None for automatic gain
+GAIN = None
