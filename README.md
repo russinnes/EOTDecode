@@ -4,7 +4,7 @@ A lightweight linux python-based decoder for real-time End-Of-Train data
 
 ## Background
 
-I was working on a separate project examining a theoretical generated/replay attack on automated railway equipment, primarily the end-of-train device which has control of emergency braking. The equipment in use is susceptible to a UHF broadcast using FSK modulation at 1200bps. An easily crafted data packet could transmit malicious messages to the receiver and action the device. In researching the messaging bit pattern, it became clear there is a niche group of railroad enthusiasts who like to decode the status broadcast messages from the "End of Train" devices. Apparently software that does this is hard-to-come-by, aside from a closed-source windows tool which is restricted by it's developers. I figured - it's just decoding 1200bps FSK, we can do that really easily if we string together a few existing tools. 
+I was working on a separate project examining a theoretical generated/replay attack on automated railway equipment, primarily the end-of-train device which has control of emergency braking. The equipment in use is susceptible to a UHF broadcast using FSK modulation at 1200bps. An easily crafted data packet could transmit malicious messages to the receiver and action the device. In researching the messaging bit pattern, it became clear there is a niche group of railroad enthusiasts who like to decode the status broadcast messages from the "End of Train" devices. Apparently, software that does this is hard-to-come-by or not easily available. I figured - it's just decoding 1200bps FSK, we can do that really easily if we string together a few existing tools. 
 
 ## History of this tool
 A deeper look at the existing software seemed to require radio scanners, piping audio through virtual patch cables, in some cases piping audio between something like GQRX and a virtual source, and it was all windows-based. 
@@ -15,7 +15,7 @@ The only real hangup was that Minimodem is designed to take in samples from an a
 
 RTL_FM produces signed, 16-bit integers, with Multimodem requiring floats. The endlessly-powerfull SoX tool will happily convert to our required float when inserted into the pipeline. After compiling the stdio branch, I fed it with a random FSK source from RTL_FM and voila! - we're outputting a bit string. The only issue (less than ideal) is the output is a string datatype, but that's still workable. 
 
-In my travels through github, I found a function from [Eric Reuter](https://github.com/ereuter) which he presented at DEFCON 26 which really made things easy. It can be found [here]. He was bringing in data from GNU Radio but that seems unnecessary for most folks. (https://github.com/ereuter/PyEOT). 
+In my travels through github, I found a function from [Eric Reuter](https://github.com/ereuter) which he presented at DEFCON 26 which really made things easy. It can be found [here](https://github.com/ereuter/PyEOT). He was bringing in data from GNU Radio but that seems unnecessary for most folks.
 
 ## Signal processing workflow
 * Tune RTL_FM to 457.9375 and pipe raw samples to SoX
@@ -91,8 +91,6 @@ Battery Charge: 0%
 Arm Status:     Normal
 ```
 The same data is dumped as JSON to a log file in the working directory as well. 
-
-This project is licensed under the MIT license.
 
 ## Acknowledgments
 
