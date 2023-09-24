@@ -70,7 +70,7 @@ rtl_proc = None
 sox_proc = None
 minimodem_proc = None
 
-rtl_cmd = ['rtl_fm', '-M', 'fm', '-f', '457.9375M', '-s', '48000', '-p', str(EOTconfig.PPM), '-d', str(EOTconfig.DEVICE)]
+rtl_cmd = ['rtl_fm', '-M', 'fm', '-f', str(EOTconfig.FREQ), '-s', '48000', '-p', str(EOTconfig.PPM), '-d', str(EOTconfig.DEVICE)]
 
 if EOTconfig.GAIN:
     rtl_cmd.append('-g')
