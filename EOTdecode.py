@@ -12,6 +12,8 @@ import json
 from eot_decoder import EOT_decode, dumpEOT, printEOT
 import EOTconfig
 
+if sys.version_info < (3, 0):
+    sys.exit("Please use Python 3")
 
 """
 
