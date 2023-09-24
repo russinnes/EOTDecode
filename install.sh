@@ -11,6 +11,7 @@ sudo apt update
 echo "====== Installing required build tools"
 sudo apt install git cmake pkg-config libusb-1.0-0-dev sox
 sudo apt install build-essential automake autoconf
+sudo apt nstall libsndfile1-dev fftw3-dev libasound2-dev libpulse-dev libsndio-dev
 
 echo "====== Checking for RTL_FM"
 
