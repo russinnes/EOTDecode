@@ -94,7 +94,7 @@ if EOTconfig.USE_RTL:
 else:
     print('====== Using soundcard input source - Starting MiniModem...\n', file=sys.stderr)
     modem_cmd.remove('-O') #remove stdin flag
-    minimodem_proc = subprocess.Popen(modem_cmd, stdin=sox_proc.stdout, stdout=subprocess.PIPE)
+    minimodem_proc = subprocess.Popen(modem_cmd, stdout=subprocess.PIPE)
 
 queue = collections.deque(maxlen=256)
 
