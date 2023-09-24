@@ -35,6 +35,7 @@ All dependencies will be installed using the ./install.sh script, but include:
 cd ~/
 git clone https://github.com/russinnes/EOTDecode.git
 cd EOTDecode
+chmod +x install.sh
 ./install.sh
 ```
 
