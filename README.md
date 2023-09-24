@@ -15,7 +15,7 @@ The only real hangup was that Minimodem is designed to take in samples from an a
 
 RTL_FM produces signed, 16-bit integers, with Multimodem requiring floats. The endlessly-powerfull SoX tool will happily convert to our required float when inserted into the pipeline. After compiling the stdio branch, I fed it with a random FSK source from RTL_FM and voila! - we're outputting a bit string. The only issue (less than ideal) is the output is a string datatype, but that's still workable. 
 
-In my travels through github, I found a function from [Eric Reuter](https://github.com/ereuter) which he presented at DEFCON 26 which really made things easy. It can be found [here](https://github.com/ereuter/PyEOT). 
+In my travels through github, I found a function from [Eric Reuter](https://github.com/ereuter) which he presented at DEFCON 26 which really made things easy. It can be found [here]. He was bringing in data from GNU Radio but that seems unnecessary for most folks. (https://github.com/ereuter/PyEOT). 
 
 ## Signal processing workflow
 * Tune RTL_FM to 457.9375 and pipe raw samples to SoX
