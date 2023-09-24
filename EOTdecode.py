@@ -41,14 +41,12 @@ def main():
 
     while RUNNING:
 
-        #data = sys.stdin.read(1)
         data = minimodem_proc.stdout.read(1).decode()
         try:
             test = int(data)
         except ValueError:
             continue
             
-        #print(data)
         queue.append(data)                     # append each new symbol to deque
         buffer = ''                                 # clear buffer
 
