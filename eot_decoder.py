@@ -20,6 +20,7 @@ Modified for EOTDecoder by russinnes 2023
 import sys
 import helpers
 import json
+import datetime
 
 class EOT_decode():
     def __init__(self, buffer):
