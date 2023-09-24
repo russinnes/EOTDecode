@@ -45,7 +45,8 @@ chmod +x install.sh
 rtl_test -p (wait a few minutes and write it down)
 edit ~/EOTDecode/EOTconfig.py and change the PPM value to the one you noted earlier
 
-*Note* - You will have to experiment with gain value (0-48) in the config file, I had good results with "None" (auto)
+*Note* - You will have to experiment with gain value (0-48) in the config file.
+I had good results with "None" (auto)
 
 
 ```
