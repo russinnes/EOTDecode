@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+Original file:
 PyEOT End-of-Train Device Decoder
 Copyright (c) 2018 Eric Reuter
 
@@ -12,6 +13,8 @@ purpose:    Class to parse EOT packet and generate BCH checkbits
             for verification.
 
             Requires helpers.py
+
+Modified for EOTDecoder by russinnes 2023
 """
 
 import sys
