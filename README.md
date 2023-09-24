@@ -75,7 +75,7 @@ Sampling at 1008000 S/s.
 Output at 48000 Hz.
 
 
-EOT 2023-09-24 10:38:34.258
+EOT 2023-09-20 10:38:34.258
 ---------------------
 Unit Address:   39351
 Pressure:       87 psig
