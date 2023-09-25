@@ -86,7 +86,7 @@ def printEOT(EOT):
 def dumpEOT(EOT):
         
     localtime = str(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f'))[:-3]
-    self.data = {
+    data = {
                 "time":localtime,
                 "id:":EOT.unit_addr,
                 "pressure":EOT.pressure,
@@ -98,7 +98,7 @@ def dumpEOT(EOT):
                 "armed":EOT.arm_status
                 }
     with open('EOTDecode.log','a') as log:
-        log.write(json.dumps(self.data)+'\n')
+        log.write(json.dumps(data)+'\n')
         
         
     
