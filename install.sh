@@ -2,7 +2,7 @@
 echo "====== Installing dependancies - please enter sudo password when prompted"
 sleep 1
 
-cd ~/
+cd
 mkdir EOTDecode_temp; cd EOTDecode_temp
 
 echo "====== Updating APT packages"
@@ -38,7 +38,7 @@ else
 
     echo "====== RTL-SDR installation complete - cleaning up"
     echo ""
-    sudo rm -rf ~/EOTDecode_temp/*
+    
 fi
 
 
