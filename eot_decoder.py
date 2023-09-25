@@ -69,7 +69,6 @@ class EOT_decode():
 def printEOT(EOT):
     localtime = str(datetime.datetime.now().
                     strftime('%Y-%m-%d %H:%M:%S.%f'))[:-3]
-    print("\n", file=sys.stderr)
     print("EOT {}".format(localtime), file=sys.stderr)
     #   print(EOT.get_packet())
     print("---------------------")
@@ -81,6 +80,7 @@ def printEOT(EOT):
     print("Battery Cond:   {}".format(EOT.batt_cond_text), file=sys.stderr)
     print("Battery Charge: {}".format(EOT.batt_charge), file=sys.stderr)
     print("Arm Status:     {}".format(EOT.arm_status), file=sys.stderr)
+    print("\n", file=sys.stderr)
 
 
 def dumpEOT(EOT):
