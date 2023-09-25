@@ -32,6 +32,7 @@ All dependencies will be installed using the ./install.sh script, but include:
 
 ### Installing
 The included install script will bring in everything you need, no need to source other dependencies.
+The installer expects you to clone to your home directory.
 ```
 cd ~/
 git clone https://github.com/russinnes/EOTDecode.git
