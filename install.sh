@@ -32,7 +32,8 @@ else
     if [ ! -f /etc/modprobe.d/blacklist-rtl.conf ]; then
         echo "====== Installing blacklist-rtl.conf"
         echo "====== Please reboot before running this"
-        sudo install -m 0644 ./blacklist-rtl.conf /etc/modprobe.d/
+        sudo install -m 0644 ~/EOTDecode/blacklist-rtl.conf /etc/modprobe.d/
+        sudo ldconfig
     fi
 
     echo "====== RTL-SDR installation complete - cleaning up"
