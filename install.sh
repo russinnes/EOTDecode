@@ -21,7 +21,10 @@ if type rtl_fm >/dev/null 2>&1; then
 else
     echo "====== RTL_FM does not exist - fetching source"
     echo ""
-    git clone git://git.osmocom.org/rtl-sdr.git
+    #git clone git://git.osmocom.org/rtl-sdr.git
+    # Updated git as per #1
+    git clone https://gitea.osmocom.org/sdr/rtl-sdr.git
+    
     cd rtl-sdr; mkdir build; cd build
     cmake ../ -DINSTALL_UDEV_RULES=ON
     make; sudo make install
